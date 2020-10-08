@@ -3,25 +3,38 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --port 8080",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.20.0",
     "core-js": "^3.3.2",
     "vue": "^2.6.10",
-    "vue-router": "^3.1.3"
+    "vue-axios": "^2.1.5",
+    "vue-router": "^3.1.3",
+    "vuetify": "^2.2.11",
+    "vuex": "^3.5.1",
+    "vuex-persistedstate": "^3.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.0.5",
-    "@vue/cli-plugin-eslint": "^4.0.5",
+    "@vue/cli-plugin-eslint": "^4.5.6",
+    "@vue/cli-plugin-router": "^4.5.4",
     "@vue/cli-service": "^4.0.5",
     "@vue/eslint-config-airbnb": "^4.0.0",
-    "babel-eslint": "^10.0.3",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
+    "axios": "^0.18.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
     "lint-staged": "^9.4.2",
-    "vue-template-compiler": "^2.6.10"
+    "material-design-icons-iconfont": "^6.1.0",
+    "sass": "^1.19.0",
+    "sass-loader": "^8.0.0",
+    "vue-cli-plugin-axios": "0.0.4",
+    "vue-cli-plugin-vuetify": "~2.0.7",
+    "vue-template-compiler": "^2.6.10",
+    "vuetify-loader": "^1.3.0"
   },
   "eslintConfig": {
     "root": true,
@@ -30,9 +43,32 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "@vue/airbnb"
+      "@vue/airbnb",
+      "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "semi": 0,
+      "array-callback-return": 0,
+      "arrow-body-style": 0,
+      "function-paren-newline": 0,
+      "no-confusing-arrow": 0,
+      "arrow-parens": 0,
+      "func-names": 0,
+      "object-shorthand": 0,
+      "indent": 0,
+      "no-param-reassign": 0,
+      "no-unused-vars": 0,
+      "implicit-arrow-linebreak": 0,
+      "no-shadow": 0,
+      "no-underscore-dangle": 0,
+      "no-unused-expressions": 0,
+      "no-console": 0,
+      "quotes": [
+        0,
+        "double"
+      ],
+      "comma-dangle": 0
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
